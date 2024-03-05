@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat&family=Open+Sans:ital@0;1&family=Poppins&family=Mrs+Saint+Delafield&display=swap');
 
-
+/* Root Fonts */
 :root {
     --FontOpenSans: 'Open Sans';
     --FontLeague: 'League Spartan';
     --FontPoppins: 'Poppins';
     --FontMontserrat: 'Montserrat';
     --FontMrsSaint: 'Mrs Saint Delafield';
+}
+
+/* Root Colors */
+:root {
+    --PrimaryWhite: #ffffff;
+    --PrimaryBlack: #000000;
+    --PrimaryLightBlack: #2b2b2b;
+    --PrimaryBlackDove: #353535;
+    --PrimaryLightGray: #f8f8f8;
+    --PrimaryLightSeaGreen: #26ad83;
 }
 
 * {
@@ -24,7 +34,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: var(--PrimaryWhite);
     overflow-x: hidden;
     transition: 1s ease-in-out;
 }
@@ -51,19 +61,19 @@ nav {
 .menu a {
     font: 1rem var(--FontOpenSans);
     text-transform: capitalize;
-    color: black;
+    color: var(--PrimaryBlack);
     transition: 1s ease-in-out;
 }
 
 .resume {
-    background-color: #26ad83;
+    background-color: var(--PrimaryLightSeaGreen);
     padding: .5rem 1.1rem;
-    color: white;
+    color: var(--PrimaryWhite);
     border-radius: 5px;
 }
 
 .btn-container button {
-    background-color: white;
+    background-color: var(--PrimaryWhite);
     display: flex;
     align-items: center;
     position: relative;
@@ -87,7 +97,7 @@ nav {
     width: 24px;
     height: 24px;
     left: 3px;
-    background-color: white;
+    background-color: var(--PrimaryWhite);
     transition: 1s ease-in-out;
 }
 
@@ -104,7 +114,7 @@ nav {
     transition: 1s ease-in-out;
 }
 
-.menu-toggle {
+.menu-hamburger {
     display: none;
     flex-direction: column;
     height: 20px;
@@ -112,7 +122,7 @@ nav {
     position: relative;
 }
 
-.menu-toggle input {
+.menu-hamburger input {
     position: absolute;
     width: 40px;
     height: 28px;
@@ -123,33 +133,33 @@ nav {
     z-index: 2;
 }
 
-.menu-toggle span {
+.menu-hamburger span {
     display: block;
     width: 28px;
     height: 2px;
-    background-color: black;
+    background-color: var(--PrimaryBlack);
     border-radius: 3px;
     transition: all .5s;
 }
 
-.menu-toggle span:nth-child(2) {
+.menu-hamburger span:nth-child(2) {
     transform-origin: 0 0;
 }
 
-.menu-toggle span:nth-child(4) {
+.menu-hamburger span:nth-child(4) {
     transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked~span:nth-child(2) {
+.menu-hamburger input:checked~span:nth-child(2) {
     transform: rotate(47deg) translate(-1px, -1px);
 }
 
-.menu-toggle input:checked~span:nth-child(3) {
+.menu-hamburger input:checked~span:nth-child(3) {
     transform: scale(0);
     opacity: 0;
 }
 
-.menu-toggle input:checked~span:nth-child(4) {
+.menu-hamburger input:checked~span:nth-child(4) {
     transform: rotate(-47deg) translate(-1px, 0);
 }
 
@@ -164,12 +174,12 @@ nav {
 .personal {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
 }
 
 .person-detail h3 {
     font: bold 1rem var(--FontOpenSans);
-    color: #26ad83;
+    color: var(--PrimaryLightSeaGreen);
     text-transform: capitalize;
     line-height: 4rem;
 }
@@ -250,7 +260,7 @@ nav {
 .decoration h1 {
     font: bold 4rem var(--FontLeague);
     text-transform: uppercase;
-    color: #f8f8f8;
+    color: var(--PrimaryLightGray);
     transition: 1s ease-in-out;
 }
 
@@ -260,7 +270,7 @@ nav {
 .toggle-active {
     left: 33px;
     transition: 1s ease-in-out;
-    background-color: black;
+    background-color: var(--PrimaryBlack);
 }
 
 .toggle-active i {
@@ -269,18 +279,18 @@ nav {
 }
 
 .toggle-active .btn_icon {
-    color: white;
+    color: var(--PrimaryWhite);
     transition: 1s ease-in-out;
 }
 
 .dark {
-    background-color: #2b2b2b;
+    background-color: var(--PrimaryLightBlack);
     transition: 1s ease-in-out;
-    color: white;
+    color: var(--PrimaryWhite);
 }
 
 .border-white {
-    background-color: white;
+    background-color: var(--PrimaryWhite);
     box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
         inset 0 8px 8px rgba(0, 0, 0, 0.1),
         inset 0 4px 4px rgba(0, 0, 0, 0.1);
@@ -288,17 +298,17 @@ nav {
 }
 
 .link-active a {
-    color: white;
+    color: var(--PrimaryWhite);
     transition: 1s ease-in-out;
 }
 
 .decoration-active h1 {
-    color: #353535;
+    color: var(--PrimaryBlackDove);
     transition: 1s ease-in-out;
 }
 
 .mt-active span {
-    background-color: white;
+    background-color: var(--PrimaryWhite);
     transition: 1s ease-in-out;
 }
 
@@ -316,12 +326,12 @@ nav {
     /* Navigation Bar */
     .menu {
         position: absolute;
-        top: 4rem;
+        top: 4.5rem;
         right: 4rem;
         width: 30vw;
         height: 45vh;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--PrimaryWhite);
         border: 1px solid #f5f5f5;
         box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, .1);
         border-radius: 10px;
@@ -335,10 +345,9 @@ nav {
     }
 
     .menu-active {
-        background-color: #353535;
+        background-color: var(--PrimaryLightBlack);
         transition: 1s ease-in-out;
     }
-
 
     .menu.slide {
         transform: translateY(0);
@@ -346,7 +355,7 @@ nav {
         transition: 1s ease-in-out;
     }
 
-    .menu-toggle {
+    .menu-hamburger {
         display: flex;
     }
 
@@ -355,7 +364,7 @@ nav {
     }
 
     .menu span {
-        background-color: #26ad83;
+        background-color: var(--PrimaryLightSeaGreen);
         padding: .5rem 1.1rem;
     }
 
@@ -364,4 +373,94 @@ nav {
     }
 
     /* End of Navigation Bar */
+
+    /* Header */
+    .container-home {
+        padding: 12rem 8%;
+        min-height: 92vh;
+        /* border: 1px solid white; */
+    }
+
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280fr, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
+    .myfoto svg {
+        width: 26vw;
+        position: absolute;
+        z-index: -1;
+        right: 17rem;
+    }
+
+    .ttd-person {
+        position: absolute;
+        bottom: 0;
+        right: 12rem;
+    }
+
+    .decoration {
+        position: absolute;
+        top: 2rem;
+        right: .9rem;
+        transform: rotate(0);
+        z-index: -2;
+        letter-spacing: 2rem;
+    }
+
+    .decoration h1 {
+        font: bold 4rem var(--FontLeague);
+        text-transform: uppercase;
+        transition: 1s ease-in-out;
+    }
+
+    .person-detail h3 {
+        font: bold 1rem var(--FontOpenSans);
+        color: var(--PrimaryLightSeaGreen);
+        text-transform: capitalize;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .person-detail h1 {
+        font: 3.7rem var(--FontLeague);
+        text-transform: capitalize;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .person-detail h5 {
+        font: 1.2rem var(--FontPoppins);
+        text-align: center;
+        line-height: 3.8rem;
+    }
+
+    .person-detail p {
+        font: .9rem var(--FontMontserrat);
+        text-align: center;
+        line-height: 1.2rem;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    /* End of Header */
 }
