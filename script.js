@@ -1,5 +1,12 @@
+const menuToggleInput = document.querySelector('.menu-toggle input');
+const menuToggle = document.querySelector('.menu-toggle');
+const navBar = document.querySelector('.menu');
+
+menuToggleInput.addEventListener('click', function () {
+    navBar.classList.toggle('slide');
+});
+
 const btnToggle = document.querySelector('.toggle');
-const linkMenu = document.querySelector('.menu');
 const iconToggle = document.querySelector('.btn_icon');
 const decorationPort = document.querySelector('.decoration');
 
@@ -14,8 +21,10 @@ if (localStorage.getItem("Mode") == "dark") {
         iconToggle.classList.add('fa-sun');
     }
 
+    navBar.classList.toggle('menu-active');
+    navBar.classList.toggle('link-active');
+    menuToggle.classList.toggle('mt-active');
     btnToggle.classList.toggle('toggle-active');
-    linkMenu.classList.toggle('link-active');
     decorationPort.classList.toggle('decoration-active');
 }
 
@@ -36,8 +45,10 @@ function toggleMode() {
         iconToggle.classList.add('fa-sun');
     }
 
+    navBar.classList.toggle('menu-active');
+    navBar.classList.toggle('link-active');
+    menuToggle.classList.toggle('mt-active');
     btnToggle.classList.toggle('toggle-active');
-    linkMenu.classList.toggle('link-active');
     decorationPort.classList.toggle('decoration-active');
 
 }

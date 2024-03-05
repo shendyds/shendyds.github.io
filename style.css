@@ -42,13 +42,24 @@ nav {
     transition: 1s ease-in-out;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .menu a {
-    display: inline-block;
-    margin: 0 1rem;
     font: 1rem var(--FontOpenSans);
     text-transform: capitalize;
     color: black;
     transition: 1s ease-in-out;
+}
+
+.resume {
+    background-color: #26ad83;
+    padding: .5rem 1.1rem;
+    color: white;
+    border-radius: 5px;
 }
 
 .btn-container button {
@@ -91,6 +102,55 @@ nav {
 .btn_icon {
     color: orange;
     transition: 1s ease-in-out;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(47deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-47deg) translate(-1px, 0);
 }
 
 /* End of Navigation Bar */
@@ -237,6 +297,11 @@ nav {
     transition: 1s ease-in-out;
 }
 
+.mt-active span {
+    background-color: white;
+    transition: 1s ease-in-out;
+}
+
 /* End of Dark Mode */
 
 /* Responsive Breakpoint*/
@@ -249,5 +314,54 @@ nav {
     }
 
     /* Navigation Bar */
+    .menu {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        width: 30vw;
+        height: 45vh;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid #f5f5f5;
+        box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        padding: 2rem 2rem;
+        display: flex;
+        align-items: start;
+        z-index: 9999;
+        opacity: 0;
+        transform: translateY(10%);
+        transition: 1s ease-in-out;
+    }
+
+    .menu-active {
+        background-color: #353535;
+        transition: 1s ease-in-out;
+    }
+
+
+    .menu.slide {
+        transform: translateY(0);
+        opacity: 1;
+        transition: 1s ease-in-out;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu a {
+        font: 1rem var(--FontPoppins);
+    }
+
+    .menu span {
+        background-color: #26ad83;
+        padding: .5rem 1.1rem;
+    }
+
+    .btn-container button {
+        margin: 1rem 0 0 0;
+    }
+
     /* End of Navigation Bar */
 }
