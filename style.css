@@ -229,7 +229,7 @@ nav {
 }
 
 .myfoto svg {
-    width: 26vw;
+    width: 27vw;
     position: absolute;
     z-index: -1;
     right: 8rem;
@@ -376,14 +376,14 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 12rem 8%;
+        padding: 10rem 8%;
         min-height: 92vh;
         /* border: 1px solid white; */
     }
 
     .personal {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280fr, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-template-areas:
             'teks teks'
             'foto foto';
@@ -399,17 +399,23 @@ nav {
         margin: 0 0 1rem 0;
     }
 
+    .myfoto img {
+        width: 20vw;
+        border-radius: 29%;
+    }
+
     .myfoto svg {
-        width: 26vw;
+        width: 34vw;
         position: absolute;
+        top: .3rem;
+        right: 15.2rem;
         z-index: -1;
-        right: 17rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 12rem;
+        right: 11rem;
     }
 
     .decoration {
@@ -486,23 +492,41 @@ nav {
         min-height: 92vh;
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 26vw;
+        width: 34vw;
         position: absolute;
         z-index: -1;
-        right: 16rem;
+        right: 14.3rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 11rem;
+        right: 10rem;
     }
 
     .decoration {
         position: absolute;
         top: 2rem;
-        right: .2rem;
+        left: 2rem;
         transform: rotate(0);
         z-index: -2;
         letter-spacing: 2rem;
@@ -532,17 +556,44 @@ nav {
         min-height: 92vh;
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 26vw;
+        width: 34vw;
         position: absolute;
         z-index: -1;
-        right: 15.8rem;
+        right: 14.3rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 10.5rem;
+        right: 9.6rem;
+    }
+
+    .decoration {
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        transform: rotate(0);
+        z-index: -2;
+        letter-spacing: 2rem;
     }
 
     /* End of Header */
@@ -569,18 +620,51 @@ nav {
         min-height: 92vh;
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
+    .myfoto img {
+        width: 23vw;
+        border-radius: 29%;
+    }
+
     .myfoto svg {
-        width: 26vw;
+        width: 39vw;
         position: absolute;
         z-index: -1;
-        right: 15.5rem;
+        right: 13rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 10rem;
+        right: 8.6rem;
     }
+
+    .decoration {
+        position: absolute;
+        top: 2rem;
+        left: 1.1rem;
+        transform: rotate(0);
+        z-index: -2;
+        letter-spacing: 2rem;
+    }
+
 
     /* End of Header */
 }
@@ -602,21 +686,44 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 11rem 8%;
-        min-height: 92vh;
+        padding: 7rem 8%;
+        min-height: 91vh;
+    }
+
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
+    .myfoto img {
+        width: 24vw;
+        border-radius: 29%;
     }
 
     .myfoto svg {
-        width: 26vw;
+        width: 41vw;
         position: absolute;
         z-index: -1;
-        right: 15rem;
+        right: 12rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 9.5rem;
+        right: 7.5rem;
     }
 
     .decoration {
@@ -652,27 +759,45 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 6rem 8%;
+        padding: 4rem 8%;
         min-height: 87vh;
-        /* border: 1px solid white; */
+    }
+
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
     }
 
     .myfoto img {
-        width: 20vw;
+        width: 33vw;
         border-radius: 29%;
     }
 
     .myfoto svg {
-        width: 30vw;
+        width: 55vw;
         position: absolute;
         z-index: -1;
-        right: 8rem;
+        top: .5rem;
+        right: 5.2rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 3rem;
+        right: 1.5rem;
     }
 
     .ttd-person h3 {
@@ -753,22 +878,41 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 6rem 8%;
+        padding: 3rem 8%;
         min-height: 87vh;
         /* border: 1px solid white; */
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 30vw;
+        width: 55vw;
         position: absolute;
         z-index: -1;
-        right: 7.8rem;
+        top: .5rem;
+        right: 5rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 2.6rem;
+        right: 1.1rem;
     }
 
     .decoration {
@@ -804,22 +948,41 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 6rem 8%;
+        padding: 4rem 8%;
         max-height: 87vh;
         /* border: 1px solid white; */
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 30vw;
+        width: 55vw;
         position: absolute;
         z-index: -1;
-        right: 7.4rem;
+        top: .5rem;
+        right: 4.7rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 2.2rem;
+        right: .6rem;
     }
 
     .decoration {
@@ -882,28 +1045,47 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 4rem 8%;
+        padding: 2rem 8%;
         max-height: 87vh;
         /* border: 1px solid white; */
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 30vw;
+        width: 55vw;
         position: absolute;
         z-index: -1;
-        right: 7.4rem;
+        top: .5rem;
+        right: 4.7rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 2.2rem;
+        right: .5rem;
     }
 
     .decoration {
         position: absolute;
         top: 1rem;
-        left: 0rem;
+        left: .1rem;
         transform: rotate(0);
         z-index: -2;
         letter-spacing: .9rem;
@@ -960,28 +1142,47 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 4rem 8%;
+        padding: 1rem 8%;
         max-height: 87vh;
         /* border: 1px solid white; */
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 30vw;
+        width: 55vw;
         position: absolute;
         z-index: -1;
-        right: 7.1rem;
+        top: .5rem;
+        right: 4.7rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 2rem;
+        right: .5rem;
     }
 
     .decoration {
         position: absolute;
         top: 1rem;
-        left: 0;
+        left: .1rem;
         transform: rotate(0);
         z-index: -2;
         letter-spacing: .8rem;
@@ -996,7 +1197,7 @@ nav {
     }
 
     .person-detail h1 {
-        font: 2.3rem var(--FontLeague);
+        font: 2.2rem var(--FontLeague);
         text-transform: capitalize;
         text-align: center;
         line-height: 1rem;
@@ -1005,7 +1206,7 @@ nav {
     .person-detail h5 {
         font: 1.1rem var(--FontPoppins);
         text-align: center;
-        line-height: 3.8rem;
+        line-height: 3.5rem;
     }
 
     .person-detail p {
@@ -1038,22 +1239,41 @@ nav {
 
     /* Header */
     .container-home {
-        padding: 5rem 8%;
+        padding: 2rem 8%;
         max-height: 87vh;
         /* border: 1px solid white; */
     }
 
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-areas:
+            'teks teks'
+            'foto foto';
+        gap: 0;
+    }
+
+    .person-detail {
+        grid-area: foto;
+    }
+
+    .myfoto {
+        grid-area: teks;
+        margin: 0 0 1rem 0;
+    }
+
     .myfoto svg {
-        width: 30vw;
+        width: 55vw;
         position: absolute;
         z-index: -1;
-        right: 7.1rem;
+        top: .5rem;
+        right: 4.4rem;
     }
 
     .ttd-person {
         position: absolute;
         bottom: 0;
-        right: 2rem;
+        right: .5rem;
     }
 
     .decoration {
@@ -1074,7 +1294,7 @@ nav {
     }
 
     .person-detail h1 {
-        font: 2.3rem var(--FontLeague);
+        font: 2rem var(--FontLeague);
         text-transform: capitalize;
         text-align: center;
         line-height: 1rem;
