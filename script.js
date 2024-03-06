@@ -52,3 +52,11 @@ function toggleMode() {
     decorationPort.classList.toggle('decoration-active');
 
 }
+
+const btnResume = document.querySelector('.resume');
+btnResume.addEventListener('click', () => {
+    btnResume.classList.add('download-active');
+    setTimeout(() => {
+        btnResume.classList.remove('download-active');
+    }, 13000);
+});
