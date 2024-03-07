@@ -59,4 +59,8 @@ btnResume.addEventListener('click', () => {
     setTimeout(() => {
         btnResume.classList.remove('download-active');
     }, 13000);
+    setTimeout(() => {
+        window.location.href = 'resume/CV Shendy Dwi Saputra.pdf';
+    }, 10000);
+    window.addEventListener('load', start, false);
 });

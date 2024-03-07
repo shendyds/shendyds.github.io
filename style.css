@@ -209,6 +209,14 @@ nav {
     cursor: pointer;
 }
 
+.completed i {
+    margin: 0 3px 0 0;
+}
+
+.download i {
+    margin: 0 3px 0 0;
+}
+
 .resume a {
     color: var(--PrimaryWhite);
     font: 1rem var(--FontLeague);
@@ -220,7 +228,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    transition: .3s;
+    transition: .5s;
 }
 
 .resume.download-active .download {
