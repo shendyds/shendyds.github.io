@@ -52,3 +52,15 @@ function toggleMode() {
     decorationPort.classList.toggle('decoration-active');
 
 }
+
+const btnResume = document.querySelector('.resume');
+btnResume.addEventListener('click', () => {
+    btnResume.classList.add('download-active');
+    setTimeout(() => {
+        btnResume.classList.remove('download-active');
+    }, 13000);
+    setTimeout(() => {
+        window.location.href = 'resume/CV Shendy Dwi Saputra.pdf';
+    }, 10000);
+    window.addEventListener('load', start, false);
+});
